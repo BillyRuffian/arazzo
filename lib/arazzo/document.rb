@@ -17,7 +17,7 @@ module Arazzo
         info: Info.from_hash(hash[:info]),
         source_descriptions: hash[:sourceDescriptions].map { |sd| SourceDescription.from_hash(sd) },
         workflows: hash[:workflows].map { |wf| Workflow.from_hash(wf) },
-        components: hash[:components]&.map { |comp| Component.from_hash(comp) }
+        components: Components.from_hash(hash[:components])
       )
     end
   end

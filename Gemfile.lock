@@ -12,7 +12,12 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
     bigdecimal (3.1.8)
+    date (3.4.1)
     diff-lcs (1.5.1)
+    io-console (0.8.0)
+    irb (1.14.3)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
     json (2.8.2)
     json-schema (5.1.1)
       addressable (~> 2.8)
@@ -22,11 +27,18 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
+    psych (5.2.2)
+      date
+      stringio
     public_suffix (6.0.1)
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
+    rdoc (6.10.0)
+      psych (>= 4.0.0)
     regexp_parser (2.9.2)
+    reline (0.6.0)
+      io-console (~> 0.5)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -54,6 +66,7 @@ GEM
       parser (>= 3.3.1.0)
     ruby-progressbar (1.13.0)
     semverse (3.0.2)
+    stringio (3.1.2)
     unicode-display_width (3.1.2)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
@@ -64,7 +77,9 @@ PLATFORMS
 
 DEPENDENCIES
   arazzo!
+  irb (~> 1.14)
   rake (~> 13.0)
+  rdoc (~> 6.10)
   rspec (~> 3.0)
   rubocop (~> 1.21)
 
